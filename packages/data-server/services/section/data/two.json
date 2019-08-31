@@ -1,0 +1,10 @@
+{
+  "slots": [
+    {"template": "c1"},
+    {"template": "c2"},
+    {"template": "c3"}
+  ],
+  "someMore": {
+    "akey": "From two.json"
+  }
+}

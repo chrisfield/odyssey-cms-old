@@ -1,0 +1,22 @@
+{
+  "name": "@odyssey-cms/data-server",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 node -r dotenv/config main.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chokidar": "^3.0.2",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dompurify": "^1.0.11",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "engines": {
+    "node": "^10"
+  }
+}

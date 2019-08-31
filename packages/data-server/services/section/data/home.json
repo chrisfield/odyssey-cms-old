@@ -1,0 +1,9 @@
+{
+  "slots": [
+    {"template": "c1"},
+    {"template": "c2"}
+  ],
+  "someMore": {
+    "akey": "home"
+  }
+}

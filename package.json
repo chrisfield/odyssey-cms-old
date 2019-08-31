@@ -1,0 +1,19 @@
+{
+  "name": "odyssey-cms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"cd packages/data-server && yarn start \" \"cd packages/web-server && yarn run dev \""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2"
+  }
+}
