@@ -1,6 +1,28 @@
 {
   "slots": [
-    {"template": "c1"}
+    {
+      "template": "c1",
+      "params": {
+        "images": [
+          {
+            "url": "https://www.angelasidwell.com/images/ghost.jpg",
+            "alt": ""
+          },
+          {
+            "url": "https://www.angelasidwell.com/images/fox.jpg",
+            "alt": ""
+          },
+          {
+            "url": "https://www.angelasidwell.com/images/fox-track.jpg",
+            "alt": ""
+          },
+          {
+            "url": "https://www.angelasidwell.com/images/crossing-point-detail.jpg",
+            "alt": ""
+          }
+        ]
+      } 
+    }
   ],
   "someMore": {
     "akey": "sub/one"

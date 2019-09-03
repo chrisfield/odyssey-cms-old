@@ -8,7 +8,8 @@ const components = {
 
 const Slot = ({slot}) => {
   const Component = components[slot.template];
-  return <Component/>;
+  const params = slot.params || {};
+  return <Component {...params}/>;
 };
 
 export default Slot;

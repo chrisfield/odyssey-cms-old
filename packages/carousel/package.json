@@ -1,0 +1,27 @@
+{
+  "name": "@odyssey-cms/carousel",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development"
+  },
+  "peerDependencies": {
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "react-easy-swipe": "^0.0.18"
+  }
+}

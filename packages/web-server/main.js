@@ -24,13 +24,14 @@ app.prepare()
   server.get('*', (req, res) => {
     const path = req.path;
     if (
-      path.startsWith('_next') ||
-      path.startsWith('/_next') ||
+      path.startsWith('_') ||
+      path.startsWith('/_') ||
       path === '/favicon.ico'
     ) {
       return handle(req, res);
     } else if (
       path === '/login' ||
+      path === '/slide' ||
       path === '/about' ||
       path === '/detail' ||
       path === '/initial-props' ||

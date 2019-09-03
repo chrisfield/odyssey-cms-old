@@ -30,7 +30,7 @@ const loadData = ({
       if (theme && !state.theme.name) {
         store.dispatch(loadTheme('simple'));
       }
-      if (section) {
+      if (section && ctx.query.path) {
         store.dispatch(loadSection(ctx.query.path));
       }
     };
