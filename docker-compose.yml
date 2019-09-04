@@ -1,0 +1,12 @@
+version: '3'
+services:
+  data-server:
+    build: ./packages/data-server
+    env_file: ./packages/data-server/.env
+    ports:
+      - 3010:3010
+  web-server:
+    build: ./packages/web-server
+    env_file: ./packages/web-server/.env.docker
+    ports:
+      - 3000:3000
