@@ -2,7 +2,9 @@ const bodyParser = require('body-parser');
 const chokidar = require('chokidar');
 const cors = require('cors');
 const express = require('express');
+const graphqlHTTP = require('express-graphql');
 const path = require('path');
+const schema = require('./schema');
 
 const { PORT } = process.env;
 const app = express();
@@ -20,6 +22,11 @@ app.all('*', (req, res, next) => {
   res.header('Access-Control-Allow-Headers', 'X-Requested-With');
   next();
 });
+
+app.use('/graphql', graphqlHTTP({
+  schema,
+  graphiql: true
+}));
 
 app.use('/themes', require('./services/theme'));
 app.use('/config', require('./services/config'));

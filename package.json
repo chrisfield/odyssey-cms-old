@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "bootstrap": "yarn install && (cd packages/web-server yarn install && cp -n .env.local .env && cd ../..) && (cd packages/data-server yarn install && cp -n .env.local .env && cd ../..)", 
+    "bootstrap": "yarn install && (cd packages/web-server yarn install && cp -n .env.local .env && cd ../..) && (cd packages/data-server yarn install && cp -n .env.local .env && cd ../..)",
     "start": "concurrently \"cd packages/data-server && yarn start \" \"cd packages/web-server && yarn run dev \"",
     "docker-build-and-start": "docker-compose -f docker-compose.yml up --build"
   },
